@@ -16,4 +16,13 @@ public interface SimpleLoginDao extends BaseMapper<User> {
      * @return
      */
     List<User> login(@Param("username") String username, @Param("password") String password);
+
+    /**
+     *
+     * @param stuNo
+     * @return
+     */
+    String getStudentInfo(@Param("stuNo") String stuNo);
+
+
 }

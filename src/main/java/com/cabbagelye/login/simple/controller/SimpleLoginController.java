@@ -37,5 +37,15 @@ public class SimpleLoginController {
         return "登录失败......";
     }
 
+    /**
+     *
+     * @return
+     */
+    @PostMapping("/getStudentInfo")
+    @ResponseBody
+    private String getStudentInfo(String stuNo){
+        String stuId = simpleLoginService.getStudentInfo(stuNo);
+        return stuId;
+    }
 
 }

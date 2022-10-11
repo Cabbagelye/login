@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan({"com.cabbagelye.login.simple.dao"})
+@MapperScan({"com.cabbagelye.login"})
 public class LoginApplication {
 
     public static void main(String[] args) {

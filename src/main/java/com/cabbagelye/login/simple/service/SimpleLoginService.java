@@ -33,4 +33,14 @@ public class SimpleLoginService {
         }
         return false;
     }
+
+
+    /**
+     *
+     * @param stuNo
+     * @return
+     */
+    public String getStudentInfo(String stuNo) {
+        return simpleLoginDao.getStudentInfo(stuNo);
+    }
 }
