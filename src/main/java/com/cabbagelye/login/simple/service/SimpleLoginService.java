@@ -1,6 +1,7 @@
 package com.cabbagelye.login.simple.service;
 
 import com.cabbagelye.login.model.User;
+import com.cabbagelye.login.model.vo.StudentVo;
 import com.cabbagelye.login.simple.dao.SimpleLoginDao;
 import org.springframework.stereotype.Service;
 
@@ -40,7 +41,7 @@ public class SimpleLoginService {
      * @param stuNo
      * @return
      */
-    public String getStudentInfo(String stuNo) {
+    public StudentVo getStudentInfo(String stuNo) {
         return simpleLoginDao.getStudentInfo(stuNo);
     }
 }

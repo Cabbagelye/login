@@ -8,6 +8,10 @@
         select * from user where zt = 0 and user_name = #{username} and pass_word = #{password}
     </select>
 
+    <select id="getStudentInfo" resultType="com.cabbagelye.login.model.vo.StudentVo">
+        select * from student where stu_no = #{stuNo}
+    </select>
+
 
 
 

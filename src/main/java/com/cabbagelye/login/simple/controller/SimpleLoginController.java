@@ -1,5 +1,6 @@
 package com.cabbagelye.login.simple.controller;
 
+import com.cabbagelye.login.model.vo.StudentVo;
 import com.cabbagelye.login.simple.service.SimpleLoginService;
 import com.cabbagelye.login.model.dto.LoginDto;
 import org.springframework.stereotype.Controller;
@@ -43,9 +44,9 @@ public class SimpleLoginController {
      */
     @PostMapping("/getStudentInfo")
     @ResponseBody
-    private String getStudentInfo(String stuNo){
-        String stuId = simpleLoginService.getStudentInfo(stuNo);
-        return stuId;
+    private StudentVo getStudentInfo(@RequestBody String stuNo){
+        StudentVo studentVo = simpleLoginService.getStudentInfo(stuNo);
+        return studentVo;
     }
 
 }
