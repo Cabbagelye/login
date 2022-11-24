@@ -2,7 +2,7 @@ package com.cabbagelye.thread.api;
 
 /**
  * @ClassName ThreadDemo
- * @Description TODO
+ * @Description 线程休眠
  * @Author Cabbagelye
  * @Date 2022/9/22 14:32
  **/
