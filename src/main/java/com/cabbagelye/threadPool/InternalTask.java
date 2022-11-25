@@ -2,7 +2,7 @@ package com.cabbagelye.threadPool;
 
 /**
  * @ClassName InternalTask
- * @Description TODO
+ * @Description 从queue中取出runnable
  * @Author Cabbagelye
  * @Date 2022/11/24 17:12
  **/
@@ -20,9 +20,9 @@ public class InternalTask implements Runnable{
     public void run() {
         while (running && !Thread.currentThread().isInterrupted()){
             try {
-                Runnable take = runnableQueue.take();
-                take.run();
-            }catch (RunableDenyException e){
+                Runnable runnable = runnableQueue.take();
+                runnable.run();
+            }catch (RunableDenyException | InterruptedException e){
                 running = false;
                 break;
             }

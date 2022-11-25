@@ -2,7 +2,7 @@ package com.cabbagelye.threadPool;
 
 /**
  * @InterFaceName DenyPolicy
- * @Description TODO
+ * @Description 拒绝策略
  * @Author Cabbagelye
  * @Date 2022/11/24 17:00
  **/

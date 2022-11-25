@@ -22,27 +22,27 @@ public interface ThreadPool {
     /**
      * 获取线程池的初始化大小
      */
-    void getInitSize();
+    int getInitSize();
 
     /**
      * 获取线程池最大线程数
      */
-    void getMaxSize();
+    int getMaxSize();
 
     /**
      * 获取线程池核心线程数
      */
-    void getCoreSize();
+    int getCoreSize();
 
     /**
      * 获取线程池中用于缓存任务队列的大小
      */
-    void getQueueSize();
+    int getQueueSize();
 
     /**
      * 获取线程池中活跃线程的数量
      */
-    void getActiveCount();
+    int getActiveCount();
 
     /**
      * 线程池是否已关闭

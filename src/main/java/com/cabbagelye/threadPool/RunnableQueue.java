@@ -18,7 +18,7 @@ public interface  RunnableQueue {
      * 工作线程通过take方法获取Runnable
      * @return
      */
-    Runnable take();
+    Runnable take() throws InterruptedException;
 
     /**
      * 获取任务队列中任务的数量
