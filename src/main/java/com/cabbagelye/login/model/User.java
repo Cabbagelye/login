@@ -3,6 +3,8 @@ package com.cabbagelye.login.model;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
+import java.util.Date;
+
 /**
  * @ClassName User
  * @Description TODO
@@ -19,10 +21,20 @@ public class User {
     private String name;
 
     private String account;
+    
+    private String password;
 
     private String phone;
 
     private String email;
+
+    private String serialNum;
+
+    private Date createTime;
+
+    private Date updateTime;
+
+    private Integer zt;
 
     public String getId() {
         return id;
@@ -48,6 +60,14 @@ public class User {
         this.account = account;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String getPhone() {
         return phone;
     }
@@ -62,5 +82,37 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getSerialNum() {
+        return serialNum;
+    }
+
+    public void setSerialNum(String serialNum) {
+        this.serialNum = serialNum;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public Integer getZt() {
+        return zt;
+    }
+
+    public void setZt(Integer zt) {
+        this.zt = zt;
     }
 }

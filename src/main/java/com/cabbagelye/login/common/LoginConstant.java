@@ -6,6 +6,6 @@ public interface LoginConstant {
     /**
      * 生成账号最大序号
      */
-    String ACCOUNT_SERIAL_NUM = "ACCOUNT_SERIAL_NUM";
+    String ACCOUNT_SERIAL_NUM = "ACCOUNT_SERIAL_NUM_";
 
 }
