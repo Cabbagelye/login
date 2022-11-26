@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @ClassName ThreadInterruptDemo
- * @Description TODO
+ * @Description 打断线程阻塞
  * @Author Cabbagelye
  * @Date 2022/9/23 11:15
  **/
