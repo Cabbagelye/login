@@ -37,12 +37,12 @@ public class TestLoginService {
      * @return
      */
     @Transactional(rollbackFor = Exception.class)
-    public boolean signAccount(SignAccountDto signAccountDto) {
+    public String signAccount(SignAccountDto signAccountDto) {
         if (ObjectUtil.isNull(signAccountDto) ){
-            return false;
+            throw new RuntimeException("未获取到注册信息");
         }
         if (null == signAccountDto.getName() || null == signAccountDto.getPhone() || null == signAccountDto.getEmail()){
-            return false;
+            throw new RuntimeException("注册信息缺少关键信息");
         }
         String today = simpleDateFormat_1.format(new Date());
 
@@ -77,9 +77,18 @@ public class TestLoginService {
         int insert = testLoginDao.insert(user);
         if (insert > 0){
             redisTemplate.opsForValue().set(LoginConstant.ACCOUNT_SERIAL_NUM + today,accountSerialNum);
-            return true;
+            return account;
         }else {
-            return false;
+            return "注册失败，请重新注册";
         }
+    }
+
+    /**
+     * 根据账号获取用户信息
+     * @param account
+     * @return
+     */
+    public User getUserInfo(String account) {
+        return testLoginDao.getUserInfo(account);
     }
 }

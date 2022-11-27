@@ -14,4 +14,12 @@ public interface TestLoginDao extends BaseMapper<User> {
      * @return
      */
     String findMaxSerialNumByDay(@Param("today") String today);
+
+
+    /**
+     * 根据账号获取用户信息
+     * @param account
+     * @return
+     */
+    User getUserInfo(@Param("account") String account);
 }

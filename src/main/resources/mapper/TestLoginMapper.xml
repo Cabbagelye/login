@@ -8,4 +8,11 @@
     <select id="findMaxSerialNumByDay" resultType="java.lang.String">
         select max(serial_num) from user where zt = 1 and create_time > #{today}
     </select>
+
+    <!--根据账号获取用户信息-->
+    <select id="getUserInfo" resultType="com.cabbagelye.login.model.User">
+        select * from user where zt = 1 and account = #{account}
+    </select>
+
+
 </mapper>
