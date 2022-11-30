@@ -4,7 +4,7 @@ package com.cabbagelye.login.simple.service;
 import cn.hutool.core.lang.UUID;
 import cn.hutool.core.util.ObjectUtil;
 import com.cabbagelye.login.common.LoginConstant;
-import com.cabbagelye.login.model.User;
+import com.cabbagelye.login.model.po.User;
 import com.cabbagelye.login.model.dto.SignAccountDto;
 import com.cabbagelye.login.simple.dao.TestLoginDao;
 import org.springframework.data.redis.core.RedisTemplate;

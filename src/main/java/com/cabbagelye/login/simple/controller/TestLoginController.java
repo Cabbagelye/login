@@ -1,6 +1,6 @@
 package com.cabbagelye.login.simple.controller;
 
-import com.cabbagelye.login.model.User;
+import com.cabbagelye.login.model.po.User;
 import com.cabbagelye.login.model.dto.SignAccountDto;
 import com.cabbagelye.login.simple.service.TestLoginService;
 import org.springframework.stereotype.Controller;

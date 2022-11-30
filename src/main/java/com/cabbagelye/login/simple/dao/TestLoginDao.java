@@ -2,7 +2,7 @@ package com.cabbagelye.login.simple.dao;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.cabbagelye.login.model.User;
+import com.cabbagelye.login.model.po.User;
 import org.apache.ibatis.annotations.Param;
 
 public interface TestLoginDao extends BaseMapper<User> {

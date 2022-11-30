@@ -1,4 +1,4 @@
-package com.cabbagelye.login.model;
+package com.cabbagelye.login.model.po;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
