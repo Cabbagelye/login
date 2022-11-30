@@ -1,0 +1,21 @@
+server:
+    port: 8080
+
+spring:
+    application:
+        name: login
+    cloud:
+        nacos:
+            discovery:
+                enabled: true
+                server-addr: 192.168.109.136:8848
+                service: ${spring.application.name}
+                group: DEFAULT_GROUP
+                register-enabled: true
+            config:
+                server-addr: 192.168.109.136:8848
+                file-extension: yaml
+                namespace: f9f2d2db-e1b9-4b55-9fee-ea576bc97f07
+
+
+
