@@ -15,7 +15,7 @@ spring:
             config:
                 server-addr: 192.168.109.136:8848
                 file-extension: yaml
-                namespace: f9f2d2db-e1b9-4b55-9fee-ea576bc97f07
+                namespace: f6ceb4e8-7752-4870-9b52-94c99470a3b3
 
 
 
